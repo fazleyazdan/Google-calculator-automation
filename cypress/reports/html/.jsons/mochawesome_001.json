@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-05-15T17:20:16.893Z",
+    "end": "2024-05-15T17:20:58.362Z",
+    "duration": 41469,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f5957d79-f672-47a8-aa22-5082cad06745",
+      "title": "",
+      "fullFile": "cypress\\e2e\\language_support.cy.js",
+      "file": "cypress\\e2e\\language_support.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c1703fda-431c-4ef7-9cfc-e27820cc7928",
+          "title": "Language support test suit",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "For addition",
+              "fullTitle": "Language support test suit For addition",
+              "timedOut": null,
+              "duration": 23313,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.wait(2500);\nnumbers.seven();\nsigns.add();\nnumbers.three();\nsigns.equal();\n// Assertion on results\nsigns.resultField(10);\ncy.wait(2000);",
+              "err": {},
+              "uuid": "a1a86253-03ac-4fe0-ac4d-6664b196a3b1",
+              "parentUUID": "c1703fda-431c-4ef7-9cfc-e27820cc7928",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "For subtraction",
+              "fullTitle": "Language support test suit For subtraction",
+              "timedOut": null,
+              "duration": 15247,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\language_support.cy.js\\\\Language support test suit -- For subtraction (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.wait(2500);\nnumbers.seven();\nsigns.subtract();\nnumbers.three();\nsigns.equal();\n// Assertion on results\nsigns.resultField(4);\ncy.wait(2000);",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because the center of this element is hidden from view:\n\n`<div jsname=\"pPHzQc\" class=\"XRsWPe MEdqYd\" jsaction=\"A2jXUd\" role=\"button\" tabindex=\"0\" aria-label=\"تفریق\" data-ved=\"2ahUKEwiZ6fq3lZCGAxUeYPEDHYAIDdIQz6kIegQIChAt\">−</div>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because the center of this element is hidden from view:\n\n`<div jsname=\"pPHzQc\" class=\"XRsWPe MEdqYd\" jsaction=\"A2jXUd\" role=\"button\" tabindex=\"0\" aria-label=\"تفریق\" data-ved=\"2ahUKEwiZ6fq3lZCGAxUeYPEDHYAIDdIQz6kIegQIChAt\">−</div>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at ensureIsDescendent (https://www.google.com/__cypress/runner/cypress_runner.js:112432:66)\n    at ensureDescendents (https://www.google.com/__cypress/runner/cypress_runner.js:112468:5)\n    at possiblyScrollMultipleTimes (https://www.google.com/__cypress/runner/cypress_runner.js:112575:22)\n    at scrollContainers (https://www.google.com/__cypress/runner/cypress_runner.js:112597:16)\n    at ensureDescendentsAndScroll (https://www.google.com/__cypress/runner/cypress_runner.js:112601:14)\n    at ensureElIsNotCovered (https://www.google.com/__cypress/runner/cypress_runner.js:112605:5)\n    at runAllChecks (https://www.google.com/__cypress/runner/cypress_runner.js:112804:52)\n    at retryActionability (https://www.google.com/__cypress/runner/cypress_runner.js:112841:16)\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://www.google.com/__cypress/runner/cypress_runner.js:4315:29)\n    at whenStable (https://www.google.com/__cypress/runner/cypress_runner.js:144459:68)\n    at <unknown> (https://www.google.com/__cypress/runner/cypress_runner.js:144400:14)\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://www.google.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://www.google.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://www.google.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://www.google.com/__cypress/runner/cypress_runner.js:1701:18)\n    at Promise._fulfill (https://www.google.com/__cypress/runner/cypress_runner.js:1645:18)\n    at <unknown> (https://www.google.com/__cypress/runner/cypress_runner.js:5450:46)\nFrom Your Spec Code:\n    at pageObject.subtract (webpack:///./cypress/page_objects/elements_page.js:17:36)\n    at Context.eval (webpack:///./cypress/e2e/language_support.cy.js:48:14)",
+                "diff": null
+              },
+              "uuid": "67fe8927-c896-435d-bc23-0c7d4413191d",
+              "parentUUID": "c1703fda-431c-4ef7-9cfc-e27820cc7928",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a1a86253-03ac-4fe0-ac4d-6664b196a3b1"
+          ],
+          "failures": [
+            "67fe8927-c896-435d-bc23-0c7d4413191d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 38560,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

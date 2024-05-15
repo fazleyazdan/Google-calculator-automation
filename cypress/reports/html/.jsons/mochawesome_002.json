@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-15T17:22:53.323Z",
+    "end": "2024-05-15T17:23:24.439Z",
+    "duration": 31116,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "28364cfa-7948-4d2e-8e4d-ab74f92a6190",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Calculator_Button_verification.cy.js",
+      "file": "cypress\\e2e\\Calculator_Button_verification.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "82f217a9-3e65-4d5c-b26a-e84083d39b78",
+          "title": "Google Calculator Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should only have the specified buttons",
+              "fullTitle": "Google Calculator Functionality should only have the specified buttons",
+              "timedOut": null,
+              "duration": 8331,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Check for presence of each specified button\ncy.get('.PaQdxb.mF5fo').then(() => {\n  for (const key in Operators) {\n    const operatorClass = Operators[key];\n    cy.get(`[jsname=\"${operatorClass}\"]`).should('exist');\n  }\n});",
+              "err": {},
+              "uuid": "01462c47-4853-4371-aac9-a80dc1c4b663",
+              "parentUUID": "82f217a9-3e65-4d5c-b26a-e84083d39b78",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display numbers when number buttons are clicked",
+              "fullTitle": "Google Calculator Functionality should display numbers when number buttons are clicked",
+              "timedOut": null,
+              "duration": 17805,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Click buttons 1, 2, 3, 4, 5, 6, 7, 8, 9, 0\nnumbers.one(); // 1\nnumbers.two(); // 2\nnumbers.three(); // 3\nnumbers.four(); // 4\nnumbers.five(); // 5\nnumbers.six(); // 6\nnumbers.seven(); // 7\nnumbers.eight(); // 8\nnumbers.nine(); // 9\nnumbers.zero(); // 0\n// Check the display shows the correct sequence\nnumbers.inputField();",
+              "err": {},
+              "uuid": "78a97146-36f9-4838-b544-8b322696b44a",
+              "parentUUID": "82f217a9-3e65-4d5c-b26a-e84083d39b78",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "01462c47-4853-4371-aac9-a80dc1c4b663",
+            "78a97146-36f9-4838-b544-8b322696b44a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 26136,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
