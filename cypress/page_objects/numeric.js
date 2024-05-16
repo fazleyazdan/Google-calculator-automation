@@ -1,56 +1,48 @@
 class Digits
 {
-    zero()
+    zero() 
     {
-        cy.get("[jsname='bkEvMb']").click({ scrollBehavior: false }).wait(1000)
+        cy.get("[jsname='bkEvMb']").scrollIntoView().click({ force: true }).wait(500);
     }
 
-    one()
+    one() 
     {
-        cy.get("[jsname='N10B9']").click({ scrollBehavior: false }).wait(1000)    
+        cy.get("[jsname='N10B9']").scrollIntoView().click({ force: true }).wait(500);
     }
-
-    two()
+    two() 
     {
-        cy.get("[jsname='lVjWed']").click({ scrollBehavior: false }).wait(1000);
+        cy.get("[jsname='lVjWed']").scrollIntoView().click({ force: true }).wait(500);
     }
-
-    three()
+    three() 
     {
-        cy.get("[jsname='KN1kY']").click({ scrollBehavior: false }).wait(1000);
+        cy.get("[jsname='KN1kY']").scrollIntoView().click({ force: true }).wait(500);
     }
-
-    four()
+    four() 
     {
-        cy.get("[jsname='xAP7E']").click({ scrollBehavior: false }).wait(1000)
+        cy.get("[jsname='xAP7E']").scrollIntoView().click({ force: true }).wait(500);
     }
-
-    five()
+    five() 
     {
-        cy.get("[jsname='Ax5wH']").click({ scrollBehavior: false }).wait(1000)
+        cy.get("[jsname='Ax5wH']").scrollIntoView().click({ force: true }).wait(500);
     }
-
-    six()
+    six() 
     {
-        cy.get("[jsname='abcgof']").click({ scrollBehavior: false }).wait(1000)
+        cy.get("[jsname='abcgof']").scrollIntoView().click({ force: true }).wait(500);
     }
-
-    seven()
+    seven() 
     {
-        cy.get("[jsname='rk7bOd']").click({ scrollBehavior: false }).wait(1000);
+        cy.get("[jsname='rk7bOd']").scrollIntoView().click({ force: true }).wait(500);
     }
-
-    eight()
+    eight() 
     {
-        cy.get("[jsname='T7PMFe']").click({ scrollBehavior: false }).wait(1000)
+        cy.get("[jsname='T7PMFe']").scrollIntoView().click({ force: true }).wait(500);
     }
-
-    nine()
+    nine() 
     {
-        cy.get("[jsname='XoxYJ']").click({ scrollBehavior: false }).wait(1000)
-
+        cy.get("[jsname='XoxYJ']").scrollIntoView().click({ force: true }).wait(500);
     }
-    inputField(){
+    inputField() 
+    {
         cy.get('span[jsname="VssY5c"]').should('have.text', '1234567890');
     }
 

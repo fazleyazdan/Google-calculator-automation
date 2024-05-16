@@ -10,9 +10,10 @@ describe('Positive test cases', ()=> {
     let signs = new pageObject()
     let numbers = new Digits()
 
+    // statements which execute before every test
     beforeEach('visit site', ()=> {
         cy.visit("https://www.google.com/search?q=google+calculator")
-        cy.get("[jsname='zLiRgc']").scrollIntoView()
+        cy.viewport(1280, 800);
         cy.wait(600)
     })
 
@@ -26,7 +27,7 @@ describe('Positive test cases', ()=> {
 
         // Assertion on results
         signs.resultField(10)
-        cy.wait(2000)
+       
     })
 
     // check whether 7-3 = 4
@@ -39,7 +40,7 @@ describe('Positive test cases', ()=> {
 
         // Assertion on results
         signs.resultField(4)
-        cy.wait(2000)
+        
     })
 
     // check whether 11 x 7 = 77
@@ -53,7 +54,7 @@ describe('Positive test cases', ()=> {
 
         // Assertion on results
         signs.resultField(77)
-        cy.wait(2000)
+        
     })
 
     // Check multiplication of numbers having decimal (5.7 x 5 = 28.5)
@@ -75,7 +76,7 @@ describe('Positive test cases', ()=> {
         
         // verify that result is cleared after clicking CE button
         signs.resultField(0)
-        cy.wait(2000)
+        
     })    
 
 
@@ -90,7 +91,7 @@ describe('Positive test cases', ()=> {
 
         // Assertion on results
         signs.resultField(5)
-        cy.wait(2000)
+        
     })
 
     
@@ -107,7 +108,7 @@ describe('Negative test cases', ()=> {
 
     beforeEach('visit site', ()=> {
         cy.visit("https://www.google.com/search?q=google+calculator")
-        cy.get("[jsname='zLiRgc']").scrollIntoView()
+        cy.viewport(1280, 800);
         cy.wait(600)
     })
 
@@ -121,7 +122,7 @@ describe('Negative test cases', ()=> {
 
         // Assertion on results
         signs.resultField('Error')
-        cy.wait(2000)
+        // cy.wait(2000)
     })
 
     // check whether . - ( = Error
@@ -134,7 +135,7 @@ describe('Negative test cases', ()=> {
 
         // Assertion on results
         signs.resultField('Error')
-        cy.wait(2000)
+        // cy.wait(2000)
     })
 
     // check whether 0 x . = Error
@@ -147,7 +148,7 @@ describe('Negative test cases', ()=> {
 
         // Assertion on results
         signs.resultField('Error')
-        cy.wait(2000)
+        // cy.wait(2000)
     })
 
     // check whether . / 7 = Error
@@ -160,7 +161,7 @@ describe('Negative test cases', ()=> {
 
         // Assertion on results
         signs.resultField('Error')
-        cy.wait(2000)
+        // cy.wait(2000)
     })
 
      // check whether Division by Zero gives 'Infinity'
@@ -173,7 +174,7 @@ describe('Negative test cases', ()=> {
 
         // Assertion on results
         signs.resultField('Infinity')
-        cy.wait(2000)
+        // cy.wait(2000)
     })
 
 })

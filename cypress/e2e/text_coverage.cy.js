@@ -10,8 +10,8 @@ describe('Text Coverage', ()=> {
         
         cy.visit("https://www.google.com/search?q=google+calculator")
         cy.wait(600)
-        cy.get('.jfN4p').scrollIntoView()
-        
+        cy.viewport(1280, 800);
+
         // check the elements are visible and contains the text they are intended to display
         allStrings.equalExist()
         allStrings.addExist()

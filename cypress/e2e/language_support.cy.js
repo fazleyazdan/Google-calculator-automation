@@ -15,21 +15,22 @@ describe('Language support test suit', ()=> {
 
         // Visit google.com
         cy.visit('https://www.google.com')
+        cy.wait(500)
+        cy.viewport(1280, 800);
 
-        cy.wait(1000)
-        // change language to 'Urdu'
+        // change language
         cy.get("#SIvCob>a:first-child").click()
 
         // navigate to google calculator
         cy.get("#APjFqb").type('Google calculator{Enter}')
-        cy.wait(2500)
-        
+        cy.wait(500)        
     })
 
     // check whether 7+3 = 10
     it('For addition', ()=>{
 
-        cy.wait(2500)
+        cy.get('.ULSxyf>.MjjYud>.Ww4FFb', { timeout: 5000 }).should('exist');
+        cy.wait(500)
         numbers.seven()
         signs.add()
         numbers.three()
@@ -37,13 +38,13 @@ describe('Language support test suit', ()=> {
 
         // Assertion on results
         signs.resultField(10)
-        cy.wait(2000)
     })
 
     // check whether 7-3 = 4
     it('For subtraction', ()=>{
 
-        cy.wait(2500)
+        cy.get('.ULSxyf>.MjjYud>.Ww4FFb', { timeout: 5000 }).should('exist');
+        cy.wait(500)
         numbers.seven()
         signs.subtract()
         numbers.three()
@@ -51,14 +52,14 @@ describe('Language support test suit', ()=> {
 
         // Assertion on results
         signs.resultField(4)
-        cy.wait(2000)
     })
 
 
 // check whether 10 / 2 = 5
     it('For Division', ()=>{
 
-        cy.wait(2500)
+        cy.get('.ULSxyf>.MjjYud>.Ww4FFb', { timeout: 5000 }).should('exist');
+        cy.wait(500)
         numbers.one()
         numbers.zero()
         signs.divide()
@@ -67,7 +68,6 @@ describe('Language support test suit', ()=> {
 
         // Assertion on results
         signs.resultField(5)
-        cy.wait(2000)
     })
 
     

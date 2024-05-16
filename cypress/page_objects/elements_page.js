@@ -2,39 +2,39 @@ class pageObject
 {
     equal() 
     {
-        cy.get("[jsname='Pt8tGc']").click();
+        cy.get("[jsname='Pt8tGc']").click({ force: true });
     }
 
     add()
 
     {
-        cy.get("[jsname='XSr6wc']").click({ scrollBehavior: false });
+        cy.get("[jsname='XSr6wc']").click({ force: true });
     }
 
     subtract()
 
     {
-        cy.get("[jsname='pPHzQc']").click()
+        cy.get("[jsname='pPHzQc']").click({ force: true })
     }
 
     multiply()
     {
-        cy.get("[jsname='YovRWb']").click()
+        cy.get("[jsname='YovRWb']").click({ force: true })
     }
 
     divide()
     {
-        cy.get("[jsname='WxTTNd']").click()
+        cy.get("[jsname='WxTTNd']").click({ force: true })
     }
 
     clearButton()
     {
-        cy.get("[jsname='SLn8gc']").click()
+        cy.get("[jsname='SLn8gc']").click({ force: true })
     }
 
     decimalButton()
     {
-        cy.get("[jsname='YrdHyf']").click()
+        cy.get("[jsname='YrdHyf']").click({ force: true })
     }
 
     resultField(result)
@@ -54,7 +54,7 @@ class pageObject
     openingBracket()
 
     {
-        cy.get("[jsname='j93WEe']").click()
+        cy.get("[jsname='j93WEe']").click({ force: true })
     }
 }
 

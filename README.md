@@ -35,14 +35,14 @@ After downloading > Goto open project
 <a id="running-tests"></a>
 
 ## Running Tests 
-To run the tests with the specfied enviroment, execute the following command:
+To run the tests with the specified environment, execute the following command:
 
 
    *To run the tests :* npx cypress open
 --After running this command , cypress window will be displayed 
 --Select E2E options > Specs files > Select any to run test case.
 
-To run MochaAwesome report generater by executing the following commands
+To run MochaAwesome report generator by executing the following commands
 npx cypress run --reporter cypress-mochawesome-reporter
 
 <a id="#project-structure"></a>

@@ -26,6 +26,10 @@ const Operators = {
     beforeEach(() => {
       // Visit the Google calculator page
       cy.visit('https://www.google.com/search?q=calculator');
+
+      // by default the view port in cypress is (1000, 600): i have expanded the screen so that everything can be displayed.
+      cy.viewport(1280, 800);
+
     });
   
     it('should only have the specified buttons', () => {

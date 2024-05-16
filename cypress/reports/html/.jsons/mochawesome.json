@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2024-05-15T17:19:34.800Z",
-    "end": "2024-05-15T17:20:14.601Z",
-    "duration": 39801,
+    "start": "2024-05-16T06:10:02.993Z",
+    "end": "2024-05-16T06:10:31.086Z",
+    "duration": 28093,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "99224cab-697f-46d5-b1b5-15fee8535393",
+      "uuid": "03680364-c11c-479f-b320-2f72d8c374d6",
       "title": "",
       "fullFile": "cypress\\e2e\\Calculator_Button_verification.cy.js",
       "file": "cypress\\e2e\\Calculator_Button_verification.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "85165308-312c-4ee9-b51b-40dee1410f21",
+          "uuid": "8b62aae1-e2f2-4f4c-9a54-d65675507ddd",
           "title": "Google Calculator Functionality",
           "fullFile": "",
           "file": "",
@@ -38,17 +38,17 @@
               "title": "should only have the specified buttons",
               "fullTitle": "Google Calculator Functionality should only have the specified buttons",
               "timedOut": null,
-              "duration": 11153,
+              "duration": 9375,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "// Check for presence of each specified button\ncy.get('.PaQdxb.mF5fo').then(() => {\n  for (const key in Operators) {\n    const operatorClass = Operators[key];\n    cy.get(`[jsname=\"${operatorClass}\"]`).should('exist');\n  }\n});",
               "err": {},
-              "uuid": "ab3314d9-dac2-415b-8634-ba4241b845f7",
-              "parentUUID": "85165308-312c-4ee9-b51b-40dee1410f21",
+              "uuid": "c4bd17a0-27e7-47ba-b4ed-45bdbc416f8a",
+              "parentUUID": "8b62aae1-e2f2-4f4c-9a54-d65675507ddd",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "should display numbers when number buttons are clicked",
               "fullTitle": "Google Calculator Functionality should display numbers when number buttons are clicked",
               "timedOut": null,
-              "duration": 23293,
+              "duration": 13400,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "// Click buttons 1, 2, 3, 4, 5, 6, 7, 8, 9, 0\nnumbers.one(); // 1\nnumbers.two(); // 2\nnumbers.three(); // 3\nnumbers.four(); // 4\nnumbers.five(); // 5\nnumbers.six(); // 6\nnumbers.seven(); // 7\nnumbers.eight(); // 8\nnumbers.nine(); // 9\nnumbers.zero(); // 0\n// Check the display shows the correct sequence\nnumbers.inputField();",
               "err": {},
-              "uuid": "2d5da4ec-9d40-4f64-b770-d86097d87d16",
-              "parentUUID": "85165308-312c-4ee9-b51b-40dee1410f21",
+              "uuid": "fa5ba5ce-b214-4504-b7b5-032dc6a920f2",
+              "parentUUID": "8b62aae1-e2f2-4f4c-9a54-d65675507ddd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ab3314d9-dac2-415b-8634-ba4241b845f7",
-            "2d5da4ec-9d40-4f64-b770-d86097d87d16"
+            "c4bd17a0-27e7-47ba-b4ed-45bdbc416f8a",
+            "fa5ba5ce-b214-4504-b7b5-032dc6a920f2"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 34446,
+          "duration": 22775,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
