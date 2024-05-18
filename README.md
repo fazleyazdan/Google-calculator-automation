@@ -28,9 +28,10 @@ This repository demonstrates the setup of an end-to-end testing framework using 
 ## Installation
 After downloading > Goto open project  
 
-3. Install the project dependencies:
-   
-   npm install
+3. Install Cypress By running this command
+
+* Windows : npm install cypress
+* Mac : sudo npm install cypress
 
 <a id="running-tests"></a>
 
@@ -38,12 +39,25 @@ After downloading > Goto open project
 To run the tests with the specified environment, execute the following command:
 
 
-   *To run the tests :* npx cypress open
+   **To run tests in UI Mode:** npx cypress open
 --After running this command , cypress window will be displayed 
 --Select E2E options > Specs files > Select any to run test case.
 
-To run MochaAwesome report generator by executing the following commands
-npx cypress run --reporter cypress-mochawesome-reporter
+   **To run all tests in Headless Mode:** npx cypress run
+   
+   **To run Specific test in Headless Mode:** npx cypress run --spec "relative path of the file"
+   
+   **Note**: for Mac add 'sudo' to above commands.
+
+#### Generate Reports Using Mochawesome:
+
+* in cypress we can generate html report by installing a package called 'cypress-mochawesome-reporter'
+* after installing it we have to do some changes in 'cypress.config.js'. see package info on npm website
+* add this: import 'cypress-mochawesome-reporter/register' in e2e.js.
+* run any testsuit/test cases on headless mode & the report will be generated for that test cases.
+
+* By running the below command reports will be generated for the test cases.
+`npx cypress run --reporter cypress-mochawesome-reporter`
 
 <a id="#project-structure"></a>
 

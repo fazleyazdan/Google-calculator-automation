@@ -1,0 +1,147 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2024-05-17T07:59:27.403Z",
+    "end": "2024-05-17T08:00:11.595Z",
+    "duration": 44192,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "905a6200-48f6-4dc3-b1f5-9835f2f63114",
+      "title": "",
+      "fullFile": "cypress\\e2e\\language_support.cy.js",
+      "file": "cypress\\e2e\\language_support.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "306cb120-7b3f-4fa4-a3a7-cea75b9a90ae",
+          "title": "Language support test suit",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "For addition",
+              "fullTitle": "Language support test suit For addition",
+              "timedOut": null,
+              "duration": 14143,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.wait(1000);\ncy.xpath(\"//div[@role='button'][normalize-space()='7']\").click();\nsigns.add();\ncy.xpath(\"//div[@role='button'][normalize-space()='3']\").click();\nsigns.equal();\n// Assertion on results\nsigns.resultField(10);",
+              "err": {},
+              "uuid": "c90b82d7-9650-4a42-a7fb-9cee7f15d67c",
+              "parentUUID": "306cb120-7b3f-4fa4-a3a7-cea75b9a90ae",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "For subtraction",
+              "fullTitle": "Language support test suit For subtraction",
+              "timedOut": null,
+              "duration": 10568,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\language_support.cy.js\\\\Language support test suit -- For subtraction (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.wait(1000);\ncy.xpath(\"//div[@role='button'][normalize-space()='7']\").click();\nsigns.subtract();\ncy.xpath(\"//div[@role='button'][normalize-space()='3']\").click();\nsigns.equal();\n// Assertion on results\nsigns.resultField(4);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//div[@role='button'][normalize-space()='7']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//div[@role='button'][normalize-space()='7']`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/language_support.cy.js:50:11)",
+                "diff": null
+              },
+              "uuid": "4042d264-4a83-41cc-8870-b8620a77bbe1",
+              "parentUUID": "306cb120-7b3f-4fa4-a3a7-cea75b9a90ae",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "For Division",
+              "fullTitle": "Language support test suit For Division",
+              "timedOut": null,
+              "duration": 14265,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\language_support.cy.js\\\\Language support test suit -- For Division (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.wait(3000);\ncy.xpath(\"//div[@role='button'][normalize-space()='1']\").click();\ncy.xpath(\"//div[@role='button'][normalize-space()='0']\").click();\nsigns.divide();\ncy.xpath(\"//div[@role='button'][normalize-space()='2']\").click();\nsigns.equal();\n// Assertion on results\nsigns.resultField(5);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//div[@role='button'][normalize-space()='1']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//div[@role='button'][normalize-space()='1']`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/language_support.cy.js:64:11)",
+                "diff": null
+              },
+              "uuid": "f19e4e3c-5ef3-42c9-ae4b-b62a81fee8cc",
+              "parentUUID": "306cb120-7b3f-4fa4-a3a7-cea75b9a90ae",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c90b82d7-9650-4a42-a7fb-9cee7f15d67c"
+          ],
+          "failures": [
+            "4042d264-4a83-41cc-8870-b8620a77bbe1",
+            "f19e4e3c-5ef3-42c9-ae4b-b62a81fee8cc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 38976,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

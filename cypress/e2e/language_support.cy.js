@@ -16,38 +16,40 @@ describe('Language support test suit', ()=> {
         // Visit google.com
         cy.visit('https://www.google.com')
         cy.wait(500)
-        cy.viewport(1280, 800);
+
+        cy.viewport(1280, 800);   
 
         // change language
         cy.get("#SIvCob>a:first-child").click()
 
         // navigate to google calculator
-        cy.get("#APjFqb").type('Google calculator{Enter}')
-        cy.wait(500)        
+        cy.get("#APjFqb").type('Google calculator')
+        cy.get("div[class='FPdoLc lJ9FBc'] input[name='btnK']").click()
+        cy.wait(500)     
+      
     })
 
     // check whether 7+3 = 10
     it('For addition', ()=>{
 
-        cy.get('.ULSxyf>.MjjYud>.Ww4FFb', { timeout: 5000 }).should('exist');
-        cy.wait(500)
-        numbers.seven()
+        cy.wait(1000)
+        cy.xpath("//div[@role='button'][normalize-space()='7']").click()
         signs.add()
-        numbers.three()
+        cy.xpath("//div[@role='button'][normalize-space()='3']").click()
         signs.equal()
 
         // Assertion on results
         signs.resultField(10)
+        
     })
 
     // check whether 7-3 = 4
     it('For subtraction', ()=>{
 
-        cy.get('.ULSxyf>.MjjYud>.Ww4FFb', { timeout: 5000 }).should('exist');
-        cy.wait(500)
-        numbers.seven()
+        cy.wait(1000)
+        cy.xpath("//div[@role='button'][normalize-space()='7']").click()
         signs.subtract()
-        numbers.three()
+        cy.xpath("//div[@role='button'][normalize-space()='3']").click()
         signs.equal()
 
         // Assertion on results
@@ -58,12 +60,11 @@ describe('Language support test suit', ()=> {
 // check whether 10 / 2 = 5
     it('For Division', ()=>{
 
-        cy.get('.ULSxyf>.MjjYud>.Ww4FFb', { timeout: 5000 }).should('exist');
-        cy.wait(500)
-        numbers.one()
-        numbers.zero()
+        cy.wait(3000)
+        cy.xpath("//div[@role='button'][normalize-space()='1']").click()
+        cy.xpath("//div[@role='button'][normalize-space()='0']").click()
         signs.divide()
-        numbers.two()
+        cy.xpath("//div[@role='button'][normalize-space()='2']").click()
         signs.equal()
 
         // Assertion on results
